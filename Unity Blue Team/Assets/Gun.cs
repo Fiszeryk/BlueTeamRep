@@ -11,7 +11,7 @@ public class Gun : MonoBehaviour
     [SerializeField]
     private GameObject bulletPoint;
     [SerializeField]
-    private float bulletSpeed = 600;
+    private float bulletSpeed = 1000;
     // Start is called before the first frame update
     void Start()
     {
