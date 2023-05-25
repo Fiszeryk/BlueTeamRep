@@ -28,7 +28,7 @@ public class EnemyAiTutorial : MonoBehaviour
 
     private void Awake()
     {
-        player = GameObject.Find("Dron").transform;
+        player = GameObject.Find("PlayerCapsule").transform;
         agent = GetComponent<NavMeshAgent>();
     }
 
