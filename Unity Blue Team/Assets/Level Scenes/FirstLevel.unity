@@ -45138,6 +45138,19 @@ MonoBehaviour:
   UseLayers:
     serializedVersion: 2
     m_Bits: 2147483647
+--- !u!114 &1574475388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9852959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38ea486a28cf34cc1a072598b55da0d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!205 &1575693778
 LODGroup:
   m_ObjectHideFlags: 0
@@ -53937,10 +53950,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bad01a6f49e1c4c5a80f0587f8892807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 5031953784026316282, guid: 5060a36f4a3094da282410a6f0320234,
+  bulletPrefab: {fileID: 5031953784026316282, guid: 7c5edacc5e88443f08bb27d676a8df8d,
     type: 3}
   bulletPoint: {fileID: 1608475111}
   bulletSpeed: 1000
+  enemyAi: {fileID: 1110746928}
 --- !u!23 &1834825537
 MeshRenderer:
   m_ObjectHideFlags: 0

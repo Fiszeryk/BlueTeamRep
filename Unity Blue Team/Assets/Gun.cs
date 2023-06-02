@@ -12,6 +12,7 @@ public class Gun : MonoBehaviour
     private GameObject bulletPoint;
     [SerializeField]
     private float bulletSpeed = 1000;
+    public EnemyAiTutorial enemyAi;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,10 @@ public class Gun : MonoBehaviour
         Debug.Log("shoot!");
         GameObject bullet = Instantiate(bulletPrefab, bulletPoint.transform.position, transform.rotation);
         bullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
+        if (enemyAi != null)
+        {
+            enemyAi.TakeDamage(10);
+        }
         Destroy(bullet, 1);
     }
 }
